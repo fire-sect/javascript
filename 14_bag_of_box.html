@@ -9,13 +9,18 @@
 <body>
     
     <script type="text/javascript">
-    // diallog box
+    
+    //prompt dialog box
+    // Entering a value before entering a page.
+    // When a prompt box pops up, the user will have to click eihter "ok" 
+    // or cancel after entering an input value.
+
     var name = prompt("What is your name?")
     if (name != ""){
         document.write("Nice to meet you" + name)
     }
 
-
+// confirmation dialog box
 
 // confirmatin box: Mostly used to ask permission:
 // Return true or false.
@@ -31,10 +36,14 @@ function myfunc(){
     }
 }
 
-    
-    </script>
-    
+
+
+</script>
+
 <input type="button" name=" " onclick="myfunc()">
+<!-- alert dialog box  -->
+<button onclick="alert('\'Alert\' dialog box Hello\nHow are you')">Try it</button>
+
 
 </body>
 </html>

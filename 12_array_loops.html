@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<!--
+Initilizing array:
+var array_name = [item1, item2, ...];
+var cars = new Array("Saab", "Volvo", "BMW");
+
+
+ pop()
+: Remove an item from the end of an array.
+
+push()
+: Add items to the end of an array
+push() returns the new array length.
+
+shift()
+: Remove an item from the beginning of an array
+shift() returns the removed item.
+
+unshift()
+: Add items to the beginning of an array
+unshift() returns the new array length. 
+
+indexof(): searches for the index of specified item and returns it's position.
+
+Array.isarray(): It checks for the given datastructure is array or not.
+
+Array.lenght:
+var lenght = array_name.length
+-->
+<p>JavaScript array elements are accessed using numeric indexes (starting from 0).</p>
+<p id="demo">Initial</p>
+<p id="demo3">Initial</p>
+<p id="demo2">Initial</p>
+
+<script>
+    var carren = new Array("Saaben", "Volvon", "BMWN");
+
+    var cars = ["Saab", "Volvo", "BMW"];
+    cars[0] = "Opel";
+    document.getElementById("demo").innerHTML = cars;  
+    document.getElementById("demo3").innerHTML = carren[0];
+    document.getElementById("demo2").innerHTML = Array.isArray(cars);
+    document.write(carren.length)
+    //output
+    //  Opel,Volvo,BMW
+    // Saaben
+    // true
+    // 3 
+</script>
+
+</body>
+</html>

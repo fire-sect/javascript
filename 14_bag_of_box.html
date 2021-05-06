@@ -9,11 +9,32 @@
 <body>
     
     <script type="text/javascript">
+    // diallog box
     var name = prompt("What is your name?")
     if (name != ""){
         document.write("Nice to meet you" + name)
     }
+
+
+
+// confirmatin box: Mostly used to ask permission:
+// Return true or false.
+function myfunc(){
+
+    var userconfirmation = confirm("Do you want to visit website");
+    if(userconfirmation == true){
+        window.open("https://www.facebook.com/");
+        return true;
+    }else{
+        document.write("Do not proceeded")
+        return false;
+    }
+}
+
+    
     </script>
+    
+<input type="button" name=" " onclick="myfunc()">
 
 </body>
 </html>

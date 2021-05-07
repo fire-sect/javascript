@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // primitive string:
+        var firstname = "john";              
+        // defined as objects:
+        var lastname = new String("john");
+// firstname == lastname  , True because x and y have equal values.
+
+        var x = "jonny";
+        var y = new String("john");
+// (x === y) is false because x and y have different types (string and object) 
+
+        document.write("Objects cannot be compared:");
+
+        // Or even worse. Objects cannot be compared:
+        var x = new String("John");             
+        var y = new String("John");
+
+// (x == y) is false because x and y are objects
+
+var x = new String("John");             
+var y = new String("John");
+
+// (x === y) is false because x and y are objects
+
+    </script>
+</body>
+</html>

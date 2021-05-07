@@ -1,0 +1,62 @@
+https://www.w3schools.com/js/js_strings.asp
+
+JavaScript Strings:
+    var sln = txt.length; 
+
+______-----______
+Escape Character:
+
+Code 	Result 	Description
+
+\' 	    ' 	    Single quote
+\" 	    " 	    Double quote
+\\ 	    \ 	    Backslash
+
+
+Code 	Result
+\b   	Backspace
+\f  	Form Feed       -/-eject the current page, page-breaking,it is one of the elements that contributes to pagination
+\n 	    New Line
+\r 	    Carriage Return         -/- returning of the carriage” to the left.
+\t 	    Horizontal Tabulator   -/- A horizontal tab '\t' takes the cursor to the next tab stop.
+                                 It does NOT increment the cursor by the width of the tab stop
+
+
+\v 	    Vertical Tabulator       
+
+
+Breaking Long Code Lines------
+
+a)-- If a JavaScript statement does not fit on one line,
+     the best place to break it is after an operator: 
+
+    document.getElementById("demo").innerHTML =
+    "Hello Dolly!";
+b)-- You can also break up a code line within a 
+        text string with a single backslash:
+    
+    document.getElementById("demo").innerHTML = "Hello \
+    Dolly!";
+
+Note: The \ method is not the preferred method. It might not have universal support.
+Some browsers do not allow spaces behind the \ character.
+
+
+================================
+Strings Can be Objects:
+Don't create strings as objects. It slows down execution speed.
+The new keyword complicates the code. This can produce some unexpected results:
+
+
+Note the difference between (x==y) and (x===y).
+Also note that comparing two JavaScript objects will always return false.
+
+ var x = "John";             
+var y = new String("John");
+
+// (x === y) is false because x and y have different types (string and object) 
+
+var x = new String("John");             
+var y = new String("John");
+
+// (x === y) is false because x and y are objects
